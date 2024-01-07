@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">SafeLens</string>
+    <string name="lets_secure">Let’s Secure</string>
+    <string name="get_started">Get Started</string>
+    <string name="welcome">WELCOME ON BOARD!</string>
+    <string name="register">Register</string>
+    <string name="enter_your_name">Enter your full name</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_aadhar">Enter your Aadhar No.</string>
+    <string name="enter_password">Enter your password</string>
+    <string name="confirm_password">Confirm your Password</string>
+    <string name="enter_phoneno">Enter your Phone Number</string>
+    <string name="already_have_account">Already having an Account? </string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome_back">WELCOME BACK!</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="login_button">LOGIN</string>
+    <string name="dont_have_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="verification">VERIFICATION</string>
+    <string name="otp_message">We will send you a <b>One Time Password</b> on your phone number</string>
+    <string name="get_otp">GET OTP</string>
+    <string name="verify_otp">You will get an <b>OTP</b> via SMS</string>
+    <string name="verify">VERIFY</string>
+    <string name="no_verification">Didn\'t receive the verification OTP ?</string>
+    <string name="resend_again">Resend again</string>
+    <string name="devices">DEVICES</string>
+    <string name="initial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas aliquam diam eu bibendum mus nulla. In donec enim habitasse commodo sagittis et id.</string>
+</resources>
