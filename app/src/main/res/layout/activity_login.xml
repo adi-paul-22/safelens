@@ -63,11 +63,78 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Inside your ConstraintLayout -->
+    <EditText
+        android:id="@+id/editTextTextName"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="260dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/editTextEmailAddress"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="320dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_your_name"
+        android:id="@+id/editTextAadhar"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="380dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_your_aadhar"
+        android:inputType="number"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextPhoneNo"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_phoneno"
+        android:inputType="phone"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="500dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
@@ -100,11 +167,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="260dp"
         android:layout_marginTop="688dp"
+        android:fontFamily="sans-serif-black"
         android:text="@string/sign_in"
         android:textColor="@color/sign_in"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

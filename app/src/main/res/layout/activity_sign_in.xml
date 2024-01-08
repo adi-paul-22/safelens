@@ -75,52 +75,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.421" />
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/textInputEmailAddress1"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="450dp"
         android:background="@drawable/curved_background"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextEnterEmailAddress"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:hint="@string/enter_your_email"
-            android:inputType="text"
-            android:paddingStart="16dp"
-            android:textColor="#DCDCDC"
-            android:textSize="13sp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/textLayoutPassword1"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="510dp"
         android:background="@drawable/curved_background"
-        app:boxBackgroundMode="none"
+        android:hint="@string/enter_password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#DCDCDC"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/editTextEnterPassword"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:hint="@string/enter_password"
-            android:inputType="text"
-            android:paddingStart="16dp"
-            android:textColor="#DCDCDC"
-            android:textSize="13sp" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textForgotPassword"
