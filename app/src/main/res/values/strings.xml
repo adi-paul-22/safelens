@@ -21,8 +21,11 @@
     <string name="get_otp">GET OTP</string>
     <string name="verify_otp">You will get an <b>OTP</b> via SMS</string>
     <string name="verify">VERIFY</string>
+    <string name="forgot_your_password">FORGOT YOUR PASSWORD?</string>
+    <string name="message_for_forget_your_password">Enter the email address associated with the account to reset your password</string>
     <string name="no_verification">Didn\'t receive the verification OTP ?</string>
     <string name="resend_again">Resend again</string>
+    <string name="continue_message">CONTINUE</string>
     <string name="devices">DEVICES</string>
     <string name="initial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet egestas aliquam diam eu bibendum mus nulla. In donec enim habitasse commodo sagittis et id.</string>
 </resources>
