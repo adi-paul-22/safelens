@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add TextViews for each camera detail -->
+
+    <TextView
+        android:id="@+id/tvCameraIdDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_id"/>
+
+    <TextView
+        android:id="@+id/tvCameraAadharDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aadhar_line"/>
+
+    <TextView
+        android:id="@+id/tvCameraDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_location"/>
+    <TextView
+        android:id="@+id/tvCameraAddress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_line_1"/>
+
+    <TextView
+        android:id="@+id/tvCameraAddress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/address_line_2"/>
+
+    <TextView
+        android:id="@+id/tvCameraDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/district_line"/>
+
+    <TextView
+        android:id="@+id/tvCameraState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state_line"/>
+
+    <TextView
+        android:id="@+id/tvCameraCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_line"/>
+
+    <TextView
+        android:id="@+id/tvCameraSpecifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera_specifications"/>
+
+    <TextView
+    android:id="@+id/tvCameraModel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/model_line"/>
+
+    <TextView
+        android:id="@+id/tvCameraResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resolution_line"/>
+    <TextView
+        android:id="@+id/tvCameraDPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpi_line"/>
+    <TextView
+        android:id="@+id/tvCameraSerialNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/serial_line"/>
+</LinearLayout>
