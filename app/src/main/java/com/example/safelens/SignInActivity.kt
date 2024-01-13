@@ -1,27 +1,49 @@
-package com.example.safelens
-import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import androidx.activity.ComponentActivity
+package com.example.safelens;
 
-class SignInActivity :ComponentActivity(){
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.activity.ComponentActivity;
+import com.example.safelens.databinding.ActivitySignInBinding;
+import com.google.firebase.auth.FirebaseAuth;
+
+class SignInActivity : ComponentActivity() {
+    private lateinit var binding: ActivitySignInBinding
+    private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
+        firebaseAuth = FirebaseAuth.getInstance()
+        binding = ActivitySignInBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val textViewSignIn: TextView = findViewById(R.id.textViewSignUp)
-        textViewSignIn.setOnClickListener {
+        binding.imageSignInBackButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        binding.textViewSignUp.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        val backButtonOnSignUp: ImageView = findViewById(R.id.imageBackButton)
-        backButtonOnSignUp.setOnClickListener{
-            val intent = Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
+        binding.buttonLogin.setOnClickListener {
+            val email = binding.signUpEnterEmail.text.toString()
+            val password = binding.SignUpEnterPassword.text.toString()
 
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Please enter email and password", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
+                if (task.isSuccessful) {
+                    Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, AllDevicesActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    Toast.makeText(this, "Login failed: " + task.exception?.message, Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
     }
 }

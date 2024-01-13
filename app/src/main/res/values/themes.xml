@@ -2,8 +2,18 @@
 <resources>
 
     <style name="Theme.SafeLens" parent="android:Theme.Material.Light.NoActionBar" />
+
     <style name="AppTheme" parent="Theme.AppCompat">
 
     </style>
+
+    <style name="Theme.SafeLens.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SafeLens.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SafeLens.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>
