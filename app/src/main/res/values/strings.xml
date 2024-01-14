@@ -55,6 +55,7 @@
     <string name="country_line">Country : </string>
     <string name="dpi_line">DPI : </string>
     <string name="resolution_line">Resolution : </string>
+    <string name="default_message">NO DEVICES CONNECTED :(</string>
     <string name="model_line">Model : </string>
     <string name="serial_line">Serial No. : </string>
     <string name="initial_text">Stay vigilant with our surveillance app, where safety meets simplicity. Protect what matters most with cutting-edge monitoring at your fingertips</string>

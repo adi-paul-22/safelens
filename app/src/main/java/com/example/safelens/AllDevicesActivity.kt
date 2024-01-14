@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.content.Intent
 import com.example.safelens.databinding.ActivityAllDevicesBinding
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -68,6 +69,13 @@ class AllDevicesActivity : ComponentActivity() {
                                 cameraArrayList.add(newCam!!)
                             }
                         }
+                        if (cameraArrayList.isEmpty()) {
+                            binding.tvNoDevices.visibility = View.VISIBLE
+                            useRecyclerView.visibility = View.GONE
+                        } else {
+                            binding.tvNoDevices.visibility = View.GONE
+                            useRecyclerView.visibility = View.VISIBLE
+                        }
                         useRecyclerView.adapter = MyAdapter(cameraArrayList) { camera, action ->
                             when (action) {
                                 "details" -> showCameraDetailsPopup(camera)
@@ -75,6 +83,9 @@ class AllDevicesActivity : ComponentActivity() {
                             }
                         }
 
+                    }else {
+                        binding.tvNoDevices.visibility = View.VISIBLE
+                        useRecyclerView.visibility = View.GONE
                     }
                 }
 

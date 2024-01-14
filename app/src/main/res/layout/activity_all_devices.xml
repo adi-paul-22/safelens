@@ -21,11 +21,27 @@
         android:paddingStart="40dp"
         android:paddingTop="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Shadow View -->
+    <TextView
+        android:id="@+id/tvNoDevices"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="200dp"
+        android:elevation="4dp"
+        android:paddingStart="40dp"
+        android:paddingTop="18dp"
+        android:text="@string/default_message"
+        android:textColor="#6E5B5B68"
+
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerView">
 
     </TextView>
 
-    <!-- Shadow View -->
     <View
         android:id="@+id/shadowView"
         android:layout_width="match_parent"
