@@ -128,10 +128,17 @@ class AllDevicesActivity : ComponentActivity() {
                 }
                 dialog.dismiss()
             }
+
             .setNegativeButton("No") { dialog, _ ->
                 dialog.dismiss()
             }
             .show()
+
+            runOnUiThread {
+            cameraArrayList.remove(camera)
+            useRecyclerView.adapter?.notifyDataSetChanged() // Refresh the list
+        }
+
     }
 
 }

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D8D8D8"
-    >
+    android:background="#D8D8D8">
 
     <ImageView
         android:id="@+id/imageBackButtonPage1"
@@ -69,64 +68,68 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/curved_background"
         android:hint="@string/enter_your_name"
         android:inputType="text"
-        android:layout_marginTop="30dp"
         android:paddingStart="20dp"
-        android:textColorHint="#DCDCDC"
         android:textColor="#000000"
+        android:textColorHint="#DCDCDC"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textWelcomeOnBoard"/>
+        app:layout_constraintTop_toBottomOf="@id/textWelcomeOnBoard" />
 
     <EditText
         android:id="@+id/RegisterEmail"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/curved_background"
         android:hint="@string/enter_your_email"
         android:inputType="textEmailAddress"
-        android:layout_marginTop="10dp"
         android:paddingStart="20dp"
-        android:textColorHint="#DCDCDC"
         android:textColor="#000000"
+        android:textColorHint="#DCDCDC"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterName"/>
+        app:layout_constraintTop_toBottomOf="@id/RegisterName" />
 
     <EditText
         android:id="@+id/RegisterAadhar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/curved_background"
         android:hint="@string/enter_your_aadhar"
         android:inputType="text"
-        android:layout_marginTop="10dp"
         android:paddingStart="20dp"
-        android:textColorHint="#DCDCDC"
         android:textColor="#000000"
+        android:textColorHint="#DCDCDC"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterEmail"/>
+        app:layout_constraintTop_toBottomOf="@id/RegisterEmail" />
 
     <EditText
         android:id="@+id/RegisterPhoneNumber"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/curved_background"
         android:hint="@string/enter_phoneno"
         android:inputType="text"
-        android:layout_marginTop="10dp"
         android:paddingStart="20dp"
-        android:textColorHint="#DCDCDC"
         android:textColor="#000000"
+        android:textColorHint="#DCDCDC"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterAadhar"/>
+        app:layout_constraintTop_toBottomOf="@id/RegisterAadhar" />
 
 
     <EditText
@@ -134,26 +137,27 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/curved_background"
         android:hint="@string/enter_password"
         android:inputType="textPassword"
-        android:layout_marginTop="10dp"
         android:paddingStart="20dp"
-        android:textColorHint="#DCDCDC"
         android:textColor="#000000"
+        android:textColorHint="#DCDCDC"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/RegisterPhoneNumber"/>
+        app:layout_constraintTop_toBottomOf="@id/RegisterPhoneNumber" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="210dp"
         android:layout_height="52dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/button_background"
         android:text="@string/register"
         android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/RegisterPassword" />
 
@@ -161,27 +165,25 @@
         android:id="@+id/textSignInPrev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="100dp"
         android:text="@string/already_have_account"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+        tools:layout_editor_absoluteY="634dp" />
 
     <TextView
         android:id="@+id/textSignIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="260dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/sign_in"
         android:textColor="@color/sign_in"
         android:textSize="12sp"
         android:textStyle="bold"
 
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toEndOf="@+id/textSignInPrev"
+        tools:layout_editor_absoluteY="634dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,11 +39,16 @@
         android:id="@+id/userList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:paddingTop="1dp"
         android:layout_marginBottom="20dp"
-        app:layout_constraintTop_toBottomOf="@id/shadowView"
+        android:paddingTop="1dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shadowView"
+        app:layout_constraintVertical_bias="0.0"
         tools:listitem="@layout/camera_item" />
+
     <FrameLayout
         android:id="@+id/navigationFocusFrame"
         android:layout_width="match_parent"

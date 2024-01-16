@@ -67,48 +67,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/shadowView"
         />
+
     <TextView
         android:id="@+id/userEmail"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/curved_background"
         android:layout_marginHorizontal="45dp"
         android:layout_marginTop="20dp"
-        android:text="Email"
+        android:background="@drawable/curved_background"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
+        android:text="Email"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userName"
-        />
+        app:layout_constraintTop_toBottomOf="@id/userName" />
+
     <TextView
         android:id="@+id/userAadhar"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/curved_background"
         android:layout_marginHorizontal="45dp"
         android:layout_marginTop="20dp"
-        android:text="Aadhar"
+        android:background="@drawable/curved_background"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
+        android:text="Aadhar"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userEmail"
-        />
+        app:layout_constraintTop_toBottomOf="@id/userEmail" />
+
     <TextView
         android:id="@+id/userPhone"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@drawable/curved_background"
         android:layout_marginHorizontal="45dp"
         android:layout_marginTop="20dp"
-        android:text="Phone Number"
+        android:background="@drawable/curved_background"
         android:paddingStart="16dp"
         android:paddingTop="8dp"
+        android:text="Phone Number"
         android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/userAadhar"
-        />
+        app:layout_constraintTop_toBottomOf="@id/userAadhar" />
 
     <Button
         android:id="@+id/signOutButton"
