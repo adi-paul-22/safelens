@@ -107,6 +107,21 @@
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/enterResolution"/>
+    <EditText
+        android:id="@+id/enterSerialNo"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/curved_background"
+        android:hint="@string/enter_serial_no"
+        android:inputType="text"
+        android:layout_marginTop="10dp"
+        android:paddingStart="20dp"
+        android:textColorHint="#DCDCDC"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enterDPI"/>
 
     <TextView
         android:id="@+id/textViewCameraLocation"
@@ -123,8 +138,7 @@
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/headerView"
-        app:layout_constraintVertical_bias="0.399" />
-
+        app:layout_constraintVertical_bias="0.439" />
     <EditText
         android:id="@+id/enterAddress1"
         android:layout_width="match_parent"
@@ -222,47 +236,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/enterPinCode"/>
 
-    <TextView
-        android:id="@+id/textViewLocationMessage"
-        android:layout_width="207dp"
-        android:layout_height="30dp"
-        android:elevation="100dp"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center"
-        android:text="@string/add_camera_message"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/headerView"
-        app:layout_constraintVertical_bias="0.691" />
-
-    <Button
-        android:id="@+id/buttonUseMyLocation"
-        android:layout_width="180dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginBottom="24dp"
-        android:background="@color/white"
-        android:text="@string/use_my_current_location"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toTopOf="@id/buttonGenerateID"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonGenerateID"
         android:layout_width="210dp"
         android:layout_height="52dp"
         android:layout_marginStart="100dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="76dp"
         android:background="@drawable/button_background"
         android:text="@string/generate_id"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar" />
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigationBar"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <FrameLayout
         android:id="@+id/navigationFocusFrame"

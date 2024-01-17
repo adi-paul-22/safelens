@@ -25,6 +25,10 @@ class MyAdapter(private val userList : ArrayList<camera>, private val onCameraCl
         holder.address1.text = currentItem.address1
         holder.address2.text = currentItem.address2
 
+        holder.imageViewVideo.setOnClickListener {
+            onCameraClick(currentItem, "video")
+        }
+
         holder.viewDetails.setOnClickListener {
             onCameraClick(currentItem, "details")
         }
@@ -41,6 +45,7 @@ class MyAdapter(private val userList : ArrayList<camera>, private val onCameraCl
         val address2 : TextView = itemView.findViewById(R.id.tvDistrictInfo)
         val viewDetails: ImageView = itemView.findViewById(R.id.viewDetails)
         val deleteCamera: ImageView = itemView.findViewById(R.id.deleteCamera)
+        val imageViewVideo: ImageView = itemView.findViewById(R.id.imageViewVideo)
     }
 
 }

@@ -57,6 +57,12 @@
     <string name="resolution_line">Resolution : </string>
     <string name="default_message">NO DEVICES CONNECTED :(</string>
     <string name="model_line">Model : </string>
+    <string name="notification_text">Notification</string>
     <string name="serial_line">Serial No. : </string>
+    <string name="typeof_camera">TYPE OF CAMERA</string>
+    <string name="choose_message">Choose the type of camera</string>
+    <string name="button_1_choose_camera">IP without DVR/NVR</string>
+    <string name="button_2_choose_camera">IP/Analog with DVR/NVR</string>
+    <string name='add_camera_message'>Stand near To Your Camera</string>
     <string name="initial_text">Stay vigilant with our surveillance app, where safety meets simplicity. Protect what matters most with cutting-edge monitoring at your fingertips</string>
 </resources>

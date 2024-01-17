@@ -35,59 +35,56 @@
         app:layout_constraintVertical_bias="0.1" />
 
     <View
-        android:id="@+id/verifyOtpBackground"
+        android:id="@+id/enterOtpBackground"
         android:layout_width="123dp"
         android:layout_height="123dp"
-        android:layout_marginStart="-401dp"
-        android:layout_marginTop="-201dp"
         android:background="@drawable/white_circle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintVertical_bias="0.314"/>
 
     <ImageView
-        android:id="@+id/imageViewVerifyOTP"
+        android:id="@+id/imageViewEnterOTP"
         android:layout_width="73dp"
         android:layout_height="82dp"
-        android:layout_marginTop="30dp"
         android:elevation="100dp"
         android:src="@drawable/img_4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="0.314" />
 
     <TextView
-        android:id="@+id/textViewVerifyOTPVerification"
+        android:id="@+id/textViewEnterOTPVerification"
         android:layout_width="207dp"
         android:layout_height="58dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="304dp"
         android:elevation="100dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="@string/verification"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/textViewVerifyOTPDescription"
         android:layout_width="226dp"
         android:layout_height="55dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="336dp"
         android:elevation="100dp"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="@string/verify_otp"
         android:textSize="13sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -111,37 +108,38 @@
         android:id="@+id/buttonVerify"
         android:layout_width="210dp"
         android:layout_height="52dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="480dp"
         android:background="@drawable/button_background"
         android:text="@string/verify"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
 
     <TextView
         android:id="@+id/textViewVerificationOTP"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="10dp"
         android:text="@string/no_verification"
         android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/buttonVerify" />
 
     <TextView
         android:id="@+id/textViewResendAgain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-black"
         android:text="@string/resend_again"
         android:textColor="@color/sign_in"
         android:textSize="12sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textViewVerificationOTP" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

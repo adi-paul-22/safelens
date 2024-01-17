@@ -2,6 +2,7 @@ package com.example.safelens
 
 import android.app.AlertDialog
 import android.content.Intent
+import android.net.Uri
 import com.example.safelens.databinding.ActivityAllDevicesBinding
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,7 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import java.net.URI
 
 class AllDevicesActivity : ComponentActivity() {
     private lateinit var binding: ActivityAllDevicesBinding
@@ -35,7 +37,7 @@ class AllDevicesActivity : ComponentActivity() {
         getCameraData()
 
         binding.fab.setOnClickListener {
-            val intent = Intent(this, AddNewDeviceActivity::class.java)
+            val intent = Intent(this, TypeOfCameraActivity::class.java)
             startActivity(intent)
         }
         binding.icon1.setOnClickListener {
@@ -46,6 +48,8 @@ class AllDevicesActivity : ComponentActivity() {
             val intent1 = Intent(this, ProfileActivity::class.java)
             startActivity(intent1)
         }
+
+
     }
 
     private fun getCameraData() {
@@ -80,6 +84,7 @@ class AllDevicesActivity : ComponentActivity() {
                             when (action) {
                                 "details" -> showCameraDetailsPopup(camera)
                                 "delete" -> deleteCameraFromFirebase(camera)
+                                "video" -> openVideoStream(camera)
                             }
                         }
 
@@ -129,7 +134,8 @@ class AllDevicesActivity : ComponentActivity() {
             .setMessage("Are you sure you want to delete this camera?")
             .setPositiveButton("Yes") { dialog, _ ->
                 // Perform the deletion
-                val dbRef = FirebaseDatabase.getInstance().getReference("cameras")
+                val databaseUrl = "https://safelens-d12fa-default-rtdb.firebaseio.com/"
+                val dbRef = FirebaseDatabase.getInstance(databaseUrl).getReference("cameras")
                 dbRef.child(camera.cameraID).removeValue().addOnSuccessListener {
                     Toast.makeText(this, "Camera deleted successfully", Toast.LENGTH_SHORT).show()
                     cameraArrayList.remove(camera)
@@ -145,4 +151,9 @@ class AllDevicesActivity : ComponentActivity() {
             .show()
     }
 
+    private fun openVideoStream(camera: camera) {
+        val url = "http://192.168.155.241:8080/video"
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
+    }
 }
